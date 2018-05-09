@@ -5,7 +5,7 @@ import Table from 'containers/Table';
 
 class App extends React.Component {
 	render() {
- 		return (
+		return (
 			<div>
 				<MuiThemeProvider>
 					<Table />
@@ -14,5 +14,5 @@ class App extends React.Component {
 		);
 	}
 }
-
+ 
 export default App;
