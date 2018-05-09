@@ -1,24 +1,23 @@
 import React from 'react';
-
 import {
   Table,
   TableBody,
   TableHeader,
   TableHeaderColumn,
   TableRow,
-  TableRowColumn
+  TableRowColumn,
 } from 'material-ui/Table';
 
 class MVTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tableData: {}
-    }
+      tableData: {},
+    };
   }
 
   render() {
-    return(
+    return (
       <Table>
         <TableHeader>
           <TableRow>
@@ -39,7 +38,7 @@ class MVTable extends React.Component {
           </TableRow>
         </TableBody>
       </Table>
-    )
+    );
   }
 }
 
