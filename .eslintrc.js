@@ -16,14 +16,6 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
         "linebreak-style": 0,
         "global-require": 0,
         "eslint linebreak-style": [0, "error", "windows"],
@@ -35,8 +27,6 @@ module.exports = {
             "error",
             "always"
         ],
-    },
-    "rules": {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],

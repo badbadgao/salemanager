@@ -12,7 +12,7 @@ class MVTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tableData: {},
+      tableData: {}, // eslint-disable-line
     };
   }
 
