@@ -1,7 +1,7 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import Table from 'containers/Table';
+import Table from './containers/Table';
 
 const App = () => (
   <div>
