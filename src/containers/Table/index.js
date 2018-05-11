@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import {
   Table,
   TableBody,
@@ -13,7 +13,8 @@ import {
 import Article from './Article';
 
 type Props = {
-  name: Array,
+  name: string,
+  data: string,
 };
 
 type State = {
@@ -22,14 +23,18 @@ type State = {
 
 export default class MVTable extends React.Component<Props, State> {
   state = {
-    count: 1,
+    count: 2,
+  };
+
+  static defaultProps = {
+    data: "aaksd",
   };
 
   render() {
     return (
       <div>
         <Article
-          title="tellme"
+          title={234}
         />
         <Table>
           <TableHeader>
