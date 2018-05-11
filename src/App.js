@@ -8,7 +8,7 @@ const App = () => (
   <div>
     <MuiThemeProvider>
       <Table
-        name="Wei's table"
+        name="wei's table"
       />
     </MuiThemeProvider>
   </div>
