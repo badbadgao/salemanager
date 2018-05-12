@@ -1,4 +1,4 @@
 // @flow
-export const ME_SET: string = 1;
+export const ME_SET: string = 'Weiwei';
 
 export const s = '';

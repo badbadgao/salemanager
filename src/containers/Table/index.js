@@ -22,12 +22,12 @@ type State = {
 };
 
 export default class MVTable extends React.Component<Props, State> {
-  state = {
-    count: 2,
+  static defaultProps = {
+    data: 'aaksd',
   };
 
-  static defaultProps = {
-    data: "aaksd",
+  state = {
+    count: 2,
   };
 
   render() {
@@ -40,7 +40,7 @@ export default class MVTable extends React.Component<Props, State> {
           <TableHeader>
             <TableRow>
               <TableHeaderColumn>Brand {this.props.name}</TableHeaderColumn>
-              <TableHeaderColumn>Product Name</TableHeaderColumn>
+              <TableHeaderColumn>Product Name{this.props.data}</TableHeaderColumn>
               <TableHeaderColumn>Quantity</TableHeaderColumn>
               <TableHeaderColumn>Price</TableHeaderColumn>
               <TableHeaderColumn>Total Price</TableHeaderColumn>
