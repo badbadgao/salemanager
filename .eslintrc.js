@@ -4,6 +4,13 @@ module.exports = {
         "commonjs": true,
         "es6": true
     },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "paths": ["src"]
+          }
+        }
+      },    
     "extends": "airbnb",
     "parser": "babel-eslint",
     "parserOptions": {
@@ -33,7 +40,4 @@ module.exports = {
         "react/jsx-uses-vars": "error",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     },
-    "ecmaFeatures": {
-      "jsx": true
-    }
 };

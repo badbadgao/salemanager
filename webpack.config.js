@@ -1,5 +1,6 @@
-var path = require('path');
-console.log(path.resolve(__dirname, 'src/index.js'));
+const path = require('path');
+
+console.log(path.resolve(__dirname, 'src/index.js'));// eslint-disable-line
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: { path: path.resolve(__dirname, 'dist/'), filename: 'index.js' },
@@ -7,7 +8,7 @@ module.exports = {
     extensions: ['*', '.js', '.jsx', '.css'],
     modules: [
       path.resolve('./src'),
-      path.resolve('./node_modules')
+      path.resolve('./node_modules'),
     ],
   },
   module: {
@@ -18,16 +19,16 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           presets: ['es2015', 'es2016', 'react'],
-          plugins: ['transform-object-rest-spread', 'transform-class-properties']
+          plugins: ['transform-object-rest-spread', 'transform-class-properties'],
         },
       },
       {
         test: /\.svg$/,
-        loader: 'svg-inline-loader'
+        loader: 'svg-inline-loader',
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
