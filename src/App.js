@@ -4,7 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Table from 'containers/Table';
 
-const App = () => (
+   const App = () => (
   <div>
     <MuiThemeProvider>
       <Table

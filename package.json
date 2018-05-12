@@ -2,7 +2,7 @@
   "name": "salemanager",
   "version": "0.1.0",
   "scripts": {
-    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "flow": "flow",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
