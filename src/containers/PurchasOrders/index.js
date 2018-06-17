@@ -7,11 +7,10 @@ import { map, keys } from 'lodash';
 import {
   Table,
   TableBody,
-  TableHeader,
-  TableHeaderColumn,
+  TableHead,
+  TableCell,
   TableRow,
-  TableRowColumn,
-} from 'material-ui/Table';
+} from '@material-ui/core/';
 
 import { getPurchaseOrders } from 'reducers/purchaseorders/actions';
 
@@ -22,7 +21,9 @@ type Props = {
 
 class PurchaseOrders extends React.Component<Props> {
   static defaultProps = {
-    tableData: {},
+    tableData: {
+      data: [],
+    },
   };
 
   componentWillMount() {
@@ -34,9 +35,9 @@ class PurchaseOrders extends React.Component<Props> {
       const RowCommponent = map(keys(rowData), (keyValue) => {
         if (keyValue !== 'id') {
           return (
-            <TableRowColumn key={keyValue}>
+            <TableCell key={keyValue}>
               {rowData[keyValue]}
-            </TableRowColumn>
+            </TableCell>
           );
         }
 
@@ -53,15 +54,16 @@ class PurchaseOrders extends React.Component<Props> {
     return (
       <div>
         <Table>
-          <TableHeader>
+          <TableHead>
             <TableRow>
-              <TableHeaderColumn>Brand </TableHeaderColumn>
-              <TableHeaderColumn>Product Name</TableHeaderColumn>
-              <TableHeaderColumn>Quantity</TableHeaderColumn>
-              <TableHeaderColumn>Price</TableHeaderColumn>
-              <TableHeaderColumn>Total Price</TableHeaderColumn>
+              <TableCell>Brand </TableCell>
+              <TableCell>Category Type </TableCell>
+              <TableCell>Product Name</TableCell>
+              <TableCell>Quantity</TableCell>
+              <TableCell>Price</TableCell>
+              <TableCell>Total Price</TableCell>
             </TableRow>
-          </TableHeader>
+          </TableHead>
           <TableBody>
             {tableRowsComponent}
           </TableBody>

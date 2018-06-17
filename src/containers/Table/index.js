@@ -4,11 +4,10 @@ import * as React from 'react';
 import {
   Table,
   TableBody,
-  TableHeader,
-  TableHeaderColumn,
+  TableHead,
+  TableCell,
   TableRow,
-  TableRowColumn,
-} from 'material-ui/Table';
+} from '@material-ui/core';
 
 import Article from './Article';
 
@@ -37,22 +36,22 @@ export default class MVTable extends React.Component<Props, State> {
           title={234}
         />
         <Table>
-          <TableHeader>
+          <TableHead>
             <TableRow>
-              <TableHeaderColumn>Brand {this.props.name}</TableHeaderColumn>
-              <TableHeaderColumn>Product Name{this.props.data}</TableHeaderColumn>
-              <TableHeaderColumn>Quantity</TableHeaderColumn>
-              <TableHeaderColumn>Price</TableHeaderColumn>
-              <TableHeaderColumn>Total Price</TableHeaderColumn>
+              <TableCell>Brand {this.props.name}</TableCell>
+              <TableCell>Product Name{this.props.data}</TableCell>
+              <TableCell>Quantity</TableCell>
+              <TableCell>Price</TableCell>
+              <TableCell>Total Price</TableCell>
             </TableRow>
-          </TableHeader>
+          </TableHead>
           <TableBody>
             <TableRow>
-              <TableRowColumn>Tomptson</TableRowColumn>
-              <TableRowColumn>{this.state.count}</TableRowColumn>
-              <TableRowColumn>10</TableRowColumn>
-              <TableRowColumn>$10.12</TableRowColumn>
-              <TableRowColumn>$101.2</TableRowColumn>
+              <TableCell>Tomptson</TableCell>
+              <TableCell>{this.state.count}</TableCell>
+              <TableCell>10</TableCell>
+              <TableCell>$10.12</TableCell>
+              <TableCell>$101.2</TableCell>
             </TableRow>
           </TableBody>
         </Table>
